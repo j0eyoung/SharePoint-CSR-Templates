@@ -1,4 +1,7 @@
-﻿(function() {
+﻿//CSR Template for Document Libraries
+// @author Edwin Young 
+// 2017-12-14
+(function() {
 	'use strict';
 	var applyStyle = function() {
 		var cssText = ['.announcement { ',
