@@ -21,13 +21,8 @@
 	var item = function(item) {
 		//To add your own custom columns just add it to the list view and call it here
 		var title = ctx.CurrentItem["URL.desc"]; //Need to have Title column in List View\
-		console.log(title)
 		var id = ctx.CurrentItem["URL"]; //Need to have ID column in list view
-		var created = ctx.CurrentItem.Created; //Need to have Created column in list view
-		var tempDateTimeArray = created.split(' '); 
-		var tempDateArray = tempDateTimeArray[0];
-		var tempTimeArray = tempDateTimeArray[1] + " " + tempDateTimeArray[2];
-		var html = ['<a style="text-decoration: none !important;" href="',id,'"><div class="announcement"><tr><td rowspan="2"><h3>',title,'</h3></td></tr><br></div></a>'].join('');
+		var html = ['<a style="text-decoration: none !important;" href="',id,'"><div class="announcement"><tr><td rowspan="2"><h3>',title,'</h3></td></tr></div></a>'].join('');
 	    return html;                                                    //Use URL for Announcement list you are adding this CSR file to
 	};
 	var override = {
